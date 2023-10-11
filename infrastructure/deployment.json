@@ -46,14 +46,14 @@
         },
         "AzureSearchService": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "asset-class-bot-search",
             "metadata": {
                 "description": "Name of Azure Search Service"
             }
         },
         "AzureSearchIndex": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "asset-class-bot-index",
             "metadata": {
                 "description": "Name of Azure Search Index"
             }
@@ -67,7 +67,7 @@
         },
         "AzureSearchUseSemanticSearch": {
             "type": "bool",
-            "defaultValue": false,
+            "defaultValue": true,
             "metadata": {
                 "description": "Use semantic search"
             }
@@ -95,7 +95,7 @@
         },
         "AzureSearchEnableInDomain": {
             "type": "bool",
-            "defaultValue": false,
+            "defaultValue": true,
             "metadata": {
                 "description": "Enable in domain"
             }
@@ -142,7 +142,7 @@
         },
         "AzureOpenAIModelName": {
             "type": "string",
-            "defaultValue": "gpt-35-turbo",
+            "defaultValue": "gpt-4",
             "metadata": {
                 "description": "Azure OpenAI Model Name"
             }
@@ -204,7 +204,7 @@
         },
         "AzureSearchQueryType": {
             "type": "string",
-            "defaultValue": "simple",
+            "defaultValue": "semantic",
             "allowedValues": [
                 "simple",
                 "semantic",
